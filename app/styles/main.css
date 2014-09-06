@@ -1,5 +1,3 @@
-html {
-  background: #CBE0B3 url(../img/bg.jpg);
-  background-size: 80px 80px;
-  background-repeat: no-repeat;
+html, body {
+ background: #CBE0B3;
 }

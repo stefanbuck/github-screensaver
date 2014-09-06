@@ -21,15 +21,19 @@ static NSString * const WebScreenSaverModuleName = @"com.stefanbuck.screensaver1
         ScreenSaverDefaults *defaults;
         defaults = [ScreenSaverDefaults defaultsForModuleWithName:WebScreenSaverModuleName];
         
-        [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
-                                    @"", @"username",
-                                    nil]];
+        [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:@"", @"username", nil]];
         
-        NSString *url = [NSString stringWithFormat:@"https://github.com/%@", [defaults stringForKey:@"username"]];
+        NSString* indexURL = [[[NSURL fileURLWithPath:[[NSBundle bundleForClass:self.class].resourcePath stringByAppendingString:@"/app/index.html"] isDirectory:NO] description] stringByAppendingFormat:@"?username=%@", [defaults stringForKey:@"username"]];
         
-		webView = [[WebView alloc] initWithFrame:[self bounds] frameName:nil groupName:nil];
+        if (self.isPreview) {
+            indexURL = [indexURL stringByAppendingString:@"&preview=true"];
+        }
         
-		[webView setMainFrameURL:url];
+        webView = [[WebView alloc] initWithFrame:[self bounds]];
+        webView.frameLoadDelegate = self;
+        webView.drawsBackground = NO;
+        [webView.mainFrame loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:indexURL] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0]];
+        
 		[self addSubview:webView];
     }
     return self;

@@ -12,6 +12,7 @@
 		5B132EAD19B8E65E00823D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B132EAB19B8E65E00823D04 /* InfoPlist.strings */; };
 		5B132EB119B8E65E00823D04 /* GitHubScreensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */; };
 		5B132EBC19B8ED3C00823D04 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B132EBB19B8ED3C00823D04 /* ConfigureSheet.xib */; };
+		5B2517CE19BA089800B42952 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 5B2517CD19BA089800B42952 /* app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5B132EAF19B8E65E00823D04 /* GitHubScreensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubScreensaverView.h; sourceTree = "<group>"; };
 		5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubScreensaverView.m; sourceTree = "<group>"; };
 		5B132EBB19B8ED3C00823D04 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		5B2517CD19BA089800B42952 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		5B132EA819B8E65E00823D04 /* GitHubScreensaver */ = {
 			isa = PBXGroup;
 			children = (
+				5B2517CD19BA089800B42952 /* app */,
 				5B132EAF19B8E65E00823D04 /* GitHubScreensaverView.h */,
 				5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */,
 				5B132EA919B8E65E00823D04 /* Supporting Files */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2517CE19BA089800B42952 /* app in Resources */,
 				5B132EBC19B8ED3C00823D04 /* ConfigureSheet.xib in Resources */,
 				5B132EAD19B8E65E00823D04 /* InfoPlist.strings in Resources */,
 			);
