@@ -1,7 +1,9 @@
+'use strict';
+
 var getUrlVars = function() {
   var vars = [], hash;
   var hashes = location.search.slice(location.search.indexOf('?') + 1).split('&');
-  for(var i = 0; i < hashes.length; i++)
+  for (var i = 0; i < hashes.length; i++)
   {
     hash = hashes[i].split('=');
     vars.push(hash[0]);
@@ -12,9 +14,9 @@ var getUrlVars = function() {
 
 $(function() {
   var qs = getUrlVars();
-  var username = qs['username'];
+  var username = qs.username;
 
-  if(username) {
+  if (username) {
     $('pre').append('loading...');
     $.get('https://api.github.com/users/' + username).then(function(data) {
       $('pre').html(JSON.stringify(data, null, ' '));

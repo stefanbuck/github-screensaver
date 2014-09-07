@@ -12,11 +12,13 @@
 		5B132EAD19B8E65E00823D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B132EAB19B8E65E00823D04 /* InfoPlist.strings */; };
 		5B132EB119B8E65E00823D04 /* GitHubScreensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */; };
 		5B132EBC19B8ED3C00823D04 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B132EBB19B8ED3C00823D04 /* ConfigureSheet.xib */; };
-		5B2517CE19BA089800B42952 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 5B2517CD19BA089800B42952 /* app */; };
+		5B9BABAA19BCB6BF00A2C5A2 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BABA919BCB6BF00A2C5A2 /* dist */; };
+		5B9BABAD19BCBC4700A2C5A2 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BABAB19BCBC4700A2C5A2 /* thumbnail.png */; };
+		5B9BABAE19BCBC4700A2C5A2 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BABAC19BCBC4700A2C5A2 /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B132E9D19B8E65E00823D04 /* GitHubScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B132E9D19B8E65E00823D04 /* GitHub stars.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHub stars.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B132EA019B8E65E00823D04 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5B132EA219B8E65E00823D04 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		5B132EA519B8E65E00823D04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -28,7 +30,9 @@
 		5B132EAF19B8E65E00823D04 /* GitHubScreensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubScreensaverView.h; sourceTree = "<group>"; };
 		5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubScreensaverView.m; sourceTree = "<group>"; };
 		5B132EBB19B8ED3C00823D04 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
-		5B2517CD19BA089800B42952 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = SOURCE_ROOT; };
+		5B9BABA919BCB6BF00A2C5A2 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = SOURCE_ROOT; };
+		5B9BABAB19BCBC4700A2C5A2 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		5B9BABAC19BCBC4700A2C5A2 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 		5B132E9E19B8E65E00823D04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B132E9D19B8E65E00823D04 /* GitHubScreensaver.saver */,
+				5B132E9D19B8E65E00823D04 /* GitHub stars.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +88,7 @@
 		5B132EA819B8E65E00823D04 /* GitHubScreensaver */ = {
 			isa = PBXGroup;
 			children = (
-				5B2517CD19BA089800B42952 /* app */,
+				5B9BABA919BCB6BF00A2C5A2 /* dist */,
 				5B132EAF19B8E65E00823D04 /* GitHubScreensaverView.h */,
 				5B132EB019B8E65E00823D04 /* GitHubScreensaverView.m */,
 				5B132EA919B8E65E00823D04 /* Supporting Files */,
@@ -96,6 +100,8 @@
 		5B132EA919B8E65E00823D04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B9BABAB19BCBC4700A2C5A2 /* thumbnail.png */,
+				5B9BABAC19BCBC4700A2C5A2 /* thumbnail@2x.png */,
 				5B132EAA19B8E65E00823D04 /* GitHubScreensaver-Info.plist */,
 				5B132EAB19B8E65E00823D04 /* InfoPlist.strings */,
 				5B132EAE19B8E65E00823D04 /* GitHubScreensaver-Prefix.pch */,
@@ -132,7 +138,7 @@
 			);
 			name = GitHubScreensaver;
 			productName = GitHubScreensaver;
-			productReference = 5B132E9D19B8E65E00823D04 /* GitHubScreensaver.saver */;
+			productReference = 5B132E9D19B8E65E00823D04 /* GitHub stars.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -166,8 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2517CE19BA089800B42952 /* app in Resources */,
+				5B9BABAD19BCBC4700A2C5A2 /* thumbnail.png in Resources */,
+				5B9BABAA19BCB6BF00A2C5A2 /* dist in Resources */,
 				5B132EBC19B8ED3C00823D04 /* ConfigureSheet.xib in Resources */,
+				5B9BABAE19BCBC4700A2C5A2 /* thumbnail@2x.png in Resources */,
 				5B132EAD19B8E65E00823D04 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +293,7 @@
 				GCC_PREFIX_HEADER = "GitHubScreensaver/GitHubScreensaver-Prefix.pch";
 				INFOPLIST_FILE = "GitHubScreensaver/GitHubScreensaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GitHub stars";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -298,7 +306,7 @@
 				GCC_PREFIX_HEADER = "GitHubScreensaver/GitHubScreensaver-Prefix.pch";
 				INFOPLIST_FILE = "GitHubScreensaver/GitHubScreensaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GitHub stars";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

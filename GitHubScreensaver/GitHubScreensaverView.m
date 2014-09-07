@@ -23,7 +23,7 @@ static NSString * const WebScreenSaverModuleName = @"com.stefanbuck.screensaver1
         
         [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:@"", @"username", nil]];
         
-        NSString* indexURL = [[[NSURL fileURLWithPath:[[NSBundle bundleForClass:self.class].resourcePath stringByAppendingString:@"/app/index.html"] isDirectory:NO] description] stringByAppendingFormat:@"?username=%@", [defaults stringForKey:@"username"]];
+        NSString* indexURL = [[[NSURL fileURLWithPath:[[NSBundle bundleForClass:self.class].resourcePath stringByAppendingString:@"/dist/index.html"] isDirectory:NO] description] stringByAppendingFormat:@"?username=%@", [defaults stringForKey:@"username"]];
         
         if (self.isPreview) {
             indexURL = [indexURL stringByAppendingString:@"&preview=true"];
