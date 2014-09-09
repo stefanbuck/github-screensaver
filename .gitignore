@@ -2,9 +2,7 @@ node_modules
 dist
 .tmp
 .sass-cache
-app/bower_components
 app/scripts/bundle.js
-test/bower_components
 
 # Xcode
 .DS_Store

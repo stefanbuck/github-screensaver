@@ -8,7 +8,6 @@
     "connect-livereload": "^0.4.0",
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.7",
-    "gulp-bower-files": "^0.2.1",
     "gulp-cache": "^0.1.1",
     "gulp-clean": "^0.2.4",
     "gulp-csso": "^0.2.6",
@@ -28,8 +27,7 @@
     "jshint-stylish": "^0.2.0",
     "opn": "^0.1.1",
     "vinyl-source-stream": "^1.0.0",
-    "watchify": "^1.0.2",
-    "wiredep": "^1.4.3"
+    "watchify": "^1.0.2"
   },
   "engines": {
     "node": ">=0.10.0"
