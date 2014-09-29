@@ -22,6 +22,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
     return gulp.src(['app/scripts/**/*.js', '!app/scripts/bundle.js'])
+        .pipe($.plumber())
         .pipe($.jshint())
         .pipe($.jscs())
         .pipe($.jshint.reporter(require('jshint-stylish')))
