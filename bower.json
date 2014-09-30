@@ -1,0 +1,8 @@
+{
+  "name": "github-screensaver",
+  "private": true,
+  "dependencies": {
+    "impress.js": "~0.5.3"
+  },
+  "devDependencies": {}
+}
